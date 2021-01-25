@@ -22,4 +22,5 @@ for line in sys.stdin:
     # output tuples (word, 1) in tab-delimited format
     for word in words:
         print '%s\t%s' % (word, "1")
-        print counter.most_common(10)
+       
+print counter.most_common(10)
