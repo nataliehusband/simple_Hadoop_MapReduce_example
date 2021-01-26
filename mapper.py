@@ -4,7 +4,6 @@ import collections
 # import stopwords
 from sklearn.feature_extraction import stop_words
 stops = set(stop_words.ENGLISH_STOP_WORDS)
-counter = collections.Counter()
 
 # get all lines from stdin
 for line in sys.stdin:
@@ -22,5 +21,3 @@ for line in sys.stdin:
     # output tuples (word, 1) in tab-delimited format
     for word in words:
         print '%s\t%s' % (word, "1")
-       
-print counter.most_common(10)
