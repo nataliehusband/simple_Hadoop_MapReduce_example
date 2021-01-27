@@ -16,7 +16,7 @@ for line in sys.stdin:
     # remove stopwords
     stopwords = stops for word in words:
         if word not in stopwords:
-            print word
+            print '%s\t%s' % (word, "1")
 
     # output tuples (word, 1) in tab-delimited format
     for word in words:
